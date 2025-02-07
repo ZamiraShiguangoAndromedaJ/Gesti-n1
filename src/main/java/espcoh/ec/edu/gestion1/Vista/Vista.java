@@ -10,8 +10,14 @@ import espcoh.ec.edu.gestion1.modelo.GestorTareas;
 
 
 public class Vista extends javax.swing.JFrame {
+
+
+      private GestorTareas gestor;
+      private Controlador controlador;
+
+
     
-   private Controlador controlador;
+   
 
 
    public Vista() {
