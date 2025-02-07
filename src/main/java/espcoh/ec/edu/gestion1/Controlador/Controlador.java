@@ -13,10 +13,14 @@ import espcoh.ec.edu.gestion1.Vista.Vista;
 public class Controlador {
     
     private Vista vista;
+  // private GestorTarea gestorTarea;
 
-    public Controlador(Vista vista) {
+   /* public Controlador(Vista vista, GestorTarea gestorTarea) {
         this.vista = vista;
+        this.gestorTarea = gestorTarea;
     }
+*/
+ 
     
     
     

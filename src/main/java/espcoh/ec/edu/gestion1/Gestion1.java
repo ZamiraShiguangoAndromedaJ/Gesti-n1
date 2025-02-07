@@ -15,5 +15,9 @@ public class Gestion1 {
     public static void main(String[] args) {
         Vista Vista = new Vista();
         Vista.setVisible(true);
+        
+        
+        
+        
     }
 }
