@@ -4,7 +4,7 @@
  */
 package espcoh.ec.edu.gestion1.Vista;
 
-import espcoh.ec.edu.gestion1.Controlador.Controlador;
+
 import espcoh.ec.edu.gestion1.modelo.GestorTareas;
 
 
@@ -12,7 +12,7 @@ import espcoh.ec.edu.gestion1.modelo.GestorTareas;
 public class Vista extends javax.swing.JFrame {
 
       private GestorTareas gestor;
-      private Controlador controlador;
+      
 
     
     public Vista() {
