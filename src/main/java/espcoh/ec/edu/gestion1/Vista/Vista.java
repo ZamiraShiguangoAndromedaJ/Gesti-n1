@@ -4,19 +4,20 @@
  */
 package espcoh.ec.edu.gestion1.Vista;
 
-/**
- *
- * @author anthony
- */
+import espcoh.ec.edu.gestion1.modelo.GestorTareas;
+
+
+
 public class Vista extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Vista
-     */
+      private GestorTareas gestor;
+
+    
     public Vista() {
         initComponents();
+        gestor = new GestorTareas();
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -107,19 +108,19 @@ public class Vista extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mnAgregarTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnAgregarTActionPerformed
-        AgregarTarea verventana = new AgregarTarea();
-        escritorio.add(verventana);
-        verventana.show();
+        AgregarTarea ventana = new AgregarTarea(gestor);
+        escritorio.add(ventana);
+        ventana.setVisible(true);
     }//GEN-LAST:event_mnAgregarTActionPerformed
 
     private void mnListaTPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnListaTPActionPerformed
-        TareasPendientes verventana = new TareasPendientes();
+        TareasPendientes verventana = new TareasPendientes(gestor);
         escritorio.add(verventana);
         verventana.show();
     }//GEN-LAST:event_mnListaTPActionPerformed
 
     private void mnListaTCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnListaTCActionPerformed
-        TareasCompletadas verventana = new TareasCompletadas();
+        TareasCompletadas verventana = new TareasCompletadas(gestor);
         escritorio.add(verventana);
         verventana.show();
     }//GEN-LAST:event_mnListaTCActionPerformed

@@ -4,19 +4,22 @@
  */
 package espcoh.ec.edu.gestion1.Vista;
 
+import espcoh.ec.edu.gestion1.modelo.GestorTareas;
+
 /**
  *
  * @author anthony
  */
 public class AgregarTarea extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form AgregarTarea
-     */
-    public AgregarTarea() {
+    
+    public GestorTareas gestor;
+    
+   
+    public AgregarTarea(GestorTareas gestor) {
+        this.gestor = gestor;
         initComponents();
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -42,6 +45,11 @@ public class AgregarTarea extends javax.swing.JInternalFrame {
         setMaximizable(true);
 
         jbAgregar.setText("Agregar");
+        jbAgregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbAgregarActionPerformed(evt);
+            }
+        });
 
         jbRegresar.setText("Regresar");
 
@@ -117,6 +125,10 @@ public class AgregarTarea extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbAgregarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbAgregarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
