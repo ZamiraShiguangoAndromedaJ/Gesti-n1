@@ -4,6 +4,8 @@
  */
 package espcoh.ec.edu.gestion1.Vista;
 
+import espcoh.ec.edu.gestion1.modelo.GestorTareas;
+
 /**
  *
  * @author anthony
@@ -13,7 +15,9 @@ public class TareasPendientes extends javax.swing.JInternalFrame {
     /**
      * Creates new form TareasPendientes
      */
-    public TareasPendientes() {
+    public GestorTareas gestor;
+    public TareasPendientes(GestorTareas gestor) {
+        this.gestor = gestor;
         initComponents();
     }
 
