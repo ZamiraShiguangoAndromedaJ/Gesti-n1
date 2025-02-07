@@ -15,6 +15,15 @@ public class GestorTareas {
         tareas = new Tarea[100];
         cantidad = 0;
     }
+
+    public Tarea[] getTareas() {
+        return tareas;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+    
     
     public void agregarTarea(Tarea tarea) {
         if (cantidad < tareas.length) {
