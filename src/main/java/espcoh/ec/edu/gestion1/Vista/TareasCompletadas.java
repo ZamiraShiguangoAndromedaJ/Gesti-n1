@@ -16,8 +16,7 @@ public class TareasCompletadas extends javax.swing.JInternalFrame {
      * Creates new form TareasCompletadas
      */
    public GestorTareas gestor;
-    public TareasCompletadas(GestorTareas gestor) {
-        this.gestor = gestor;
+    public TareasCompletadas() {
         initComponents();
     }
 

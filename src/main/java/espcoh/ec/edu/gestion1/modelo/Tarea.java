@@ -14,12 +14,7 @@ public class Tarea {
     private String descripcion;
     private boolean completada;
     
-    public Tarea(int id, String titulo, String descripcion) {
-        this.id = id;
-        this.titulo = titulo;
-        this.descripcion = descripcion;
-        this.completada = false; // La tarea se crea por defecto como no completada.
-    }
+   
 
     public int getId() {
         return id;

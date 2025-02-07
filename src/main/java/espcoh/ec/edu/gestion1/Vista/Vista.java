@@ -4,18 +4,19 @@
  */
 package espcoh.ec.edu.gestion1.Vista;
 
+import espcoh.ec.edu.gestion1.Controlador.Controlador;
 import espcoh.ec.edu.gestion1.modelo.GestorTareas;
 
 
 
 public class Vista extends javax.swing.JFrame {
-
-      private GestorTareas gestor;
-
     
-    public Vista() {
+   private Controlador controlador;
+
+
+   public Vista() {
         initComponents();
-        gestor = new GestorTareas();
+        controlador=new Controlador(this);
     }
     
     @SuppressWarnings("unchecked")
@@ -108,19 +109,19 @@ public class Vista extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mnAgregarTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnAgregarTActionPerformed
-        AgregarTarea ventana = new AgregarTarea(gestor);
+        AgregarTarea ventana = new AgregarTarea();
         escritorio.add(ventana);
         ventana.setVisible(true);
     }//GEN-LAST:event_mnAgregarTActionPerformed
 
     private void mnListaTPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnListaTPActionPerformed
-        TareasPendientes verventana = new TareasPendientes(gestor);
+        TareasPendientes verventana = new TareasPendientes();
         escritorio.add(verventana);
         verventana.show();
     }//GEN-LAST:event_mnListaTPActionPerformed
 
     private void mnListaTCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnListaTCActionPerformed
-        TareasCompletadas verventana = new TareasCompletadas(gestor);
+        TareasCompletadas verventana = new TareasCompletadas();
         escritorio.add(verventana);
         verventana.show();
     }//GEN-LAST:event_mnListaTCActionPerformed

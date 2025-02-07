@@ -16,8 +16,7 @@ public class TareasPendientes extends javax.swing.JInternalFrame {
      * Creates new form TareasPendientes
      */
     public GestorTareas gestor;
-    public TareasPendientes(GestorTareas gestor) {
-        this.gestor = gestor;
+    public TareasPendientes() {
         initComponents();
     }
 

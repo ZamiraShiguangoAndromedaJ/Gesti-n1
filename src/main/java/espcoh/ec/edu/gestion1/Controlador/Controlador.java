@@ -5,6 +5,8 @@
 package espcoh.ec.edu.gestion1.Controlador;
 
 import espcoh.ec.edu.gestion1.Vista.Vista;
+import espcoh.ec.edu.gestion1.modelo.GestorTareas;
+import espcoh.ec.edu.gestion1.modelo.Tarea;
 
 /**
  *
@@ -13,9 +15,13 @@ import espcoh.ec.edu.gestion1.Vista.Vista;
 public class Controlador {
     
     private Vista vista;
+    private GestorTareas gestor;
+    private Tarea tarea;
 
-    public Controlador(Vista vista) {
+   public Controlador(Vista vista) {
         this.vista = vista;
+        this.gestor = new GestorTareas();
+        this.tarea = new Tarea();
     }
     
     

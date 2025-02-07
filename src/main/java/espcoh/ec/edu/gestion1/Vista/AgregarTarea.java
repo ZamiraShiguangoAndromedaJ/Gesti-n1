@@ -16,8 +16,7 @@ public class AgregarTarea extends javax.swing.JInternalFrame {
     public GestorTareas gestor;
     
    
-    public AgregarTarea(GestorTareas gestor) {
-        this.gestor = gestor;
+    public AgregarTarea() {
         initComponents();
     }
     /**
